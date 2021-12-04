@@ -4,8 +4,8 @@
         "version": "0.1.0"
     },
     "build": {
-        "distDir": "../public",
-        "devPath": "../public",
+        "distDir": "../dist",
+        "devPath": "../dist",
         "beforeDevCommand": "",
         "beforeBuildCommand": "",
         "withGlobalTauri": true
@@ -55,7 +55,7 @@
         "windows": [
             {
                 "title": "Taumiel App",
-                "url": "html/index.html",
+                "url": "index.html",
                 "width": 800,
                 "height": 600,
                 "visible": false

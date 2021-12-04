@@ -11,7 +11,12 @@ const app = new Vue({
     methods: {
         about: () => {
             windows.create({
-                url: '../html/about.html',
+                // We suppose that this file (index.ts) will be stored
+                // as a `public/js/forms/index.js` after ts compilation,
+                // but parcel bundler will strip all subfolders, so in `dist`
+                // folder it will be stored together, without `js` and `forms` folders,
+                // so we just use here html page's name
+                url: 'about.html',
                 title: 'About',
                 sizes: {
                     width: 600,

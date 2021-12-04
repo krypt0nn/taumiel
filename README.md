@@ -34,7 +34,7 @@ Change these parameters:
 
 ## Development
 
-Directory `src` stores your [TypeScript](https://typescriptlang.org) and [SASS](https://sass-lang.com) code. When you run `npm run dev` command in console - they will compile to the js and css files inside `public` directory
+Directory `src` stores your [TypeScript](https://typescriptlang.org) and [SASS](https://sass-lang.com) code. When you run `npm run dev` command in console - they will be compiled to the js and css files inside `public` directory. Then when you will run `npm run bundle` your project will be bundled in `dist` folder by [parcel](https://parceljs.org)
 
 In the `public` stored information about your application - images it uses, html pages and something you want to use. Other directories will not be available in the compiled binaries
 
