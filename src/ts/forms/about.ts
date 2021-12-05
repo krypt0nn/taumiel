@@ -1,14 +1,15 @@
-// @ts-expect-error
-import Vue from '../vue';
+import * as Vue from 'vue';
 
 import { windows } from '../Taumiel';
 
-const app = new Vue({
-    el: '#app',
-    data: {
-        message: 'Banana'
+Vue.createApp({
+    data()
+    {
+        return {
+            message: 'Banana'
+        };
     },
 
     // Show this window when it's fully loaded
     mounted: () => windows.current.show()
-});
+}).mount('#app');

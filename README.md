@@ -46,6 +46,12 @@ To build binaries run `npm run build`
 
 All binaries will appear in the `src-tauri/target/release` directory
 
+## NPM support
+
+Thanks to [parcel](https://parceljs.org), we have [basic node emulation](https://parceljs.org/features/node-emulation) for some node packages like `path` or `https`
+
+You can try to use node packages, but I honestly don't know will they work or not
+
 ## Documentation
 
 | Name | Description |
